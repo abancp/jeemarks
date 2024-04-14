@@ -10,6 +10,7 @@ function UploadForm() {
   const [name, setName] = useState("Drop here, or click to select")
   const onDrop = useCallback(async acceptedFiles => {
     try {
+      console.log("uploading...");
       setLoading(true)
       const file = acceptedFiles[0]
       setName(file?.name?.length > 20 ? file.name.substring(0, 17) + "..." : file.name)
