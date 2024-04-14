@@ -9,7 +9,7 @@ const upload = multer({ dest: './uploads/' });
 
 
 app.use(cors({
-    origin: ['http://localhost:5173','https://jeescore.vercel.app'],
+    origin: ['http://localhost:5173','https://jeemarks.vercel.app'],
     methods: 'GET, POST, PUT, DELETE',
     Headers: ['Content-Type', 'Authorization', 'X-Requested-With', 'multipart/form-data'],
     credentials: true,

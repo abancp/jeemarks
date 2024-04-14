@@ -15,7 +15,7 @@ function UploadForm() {
       setName(file?.name?.length > 20 ? file.name.substring(0, 17) + "..." : file.name)
       const formData = new FormData();
       formData.append('pdfFile', file);
-      const response = await axios.post('http://localhost:3001/', formData, {
+      const response = await axios.post('https://jeescore.onrender.com/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       console.log(response.data.result);
