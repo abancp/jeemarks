@@ -1,0 +1,132 @@
+.main {
+  color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  max-height: fit-content;
+  min-width: 100%;
+  max-width: fit-content;
+  font-weight: 900;
+  font-size: x-large;
+  color: rgb(0, 179, 255);
+  gap: 1rem;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.branding {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.response-sheet-h4 {
+  color: rgb(0, 179, 255);
+  font-weight: 700;
+  font-size: x-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-h4 {
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+.b-tech-h2 {
+  font-weight: 300;
+  font-size: small;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-form {
+  border: 1px solid rgb(107, 107, 107);
+  max-width: 25rem;
+  max-width: 100%;
+  height: 4rem;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: large;
+}
+
+p {
+  text-align: center;
+}
+
+.file-input {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  border: 1px rgb(107, 107, 107) solid;
+  border-style: dashed;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5rem;
+  /* overflow: scroll; */
+}
+
+.result-table {
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+td , th {
+  background: #1b2034;
+  border-radius: 2px;
+  color: rgb(92, 244, 233);
+  font-size: 17px;
+  padding: 3px;
+}
+tr:hover{
+  opacity: 0.8;
+}
+
+pre{
+  background: #1b20346e;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.link{
+  color: rgb(20, 0, 168);
+}
+
+.credit-span{
+  margin: 0;
+}
+
+.df{
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 ;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 600px) {
+  /* Selects all body text elements (adjust selectors as needed) */
+  td,th {
+    font-size: 12px; /* Adjust font size as desired */
+  }
+  pre{
+    font-size: 14px;
+  }
+  .popup{
+    justify-content: start;
+  }
+}

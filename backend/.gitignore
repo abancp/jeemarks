@@ -1,0 +1,7 @@
+/node_modules
+/.env
+/uploads
+/jeescore.pdf
+/mongodb.js
+/setAnswerKey.js
+/answer_key.js
