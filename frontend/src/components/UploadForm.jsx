@@ -23,7 +23,7 @@ function UploadForm() {
       setName(file?.name?.length > 20 ? file.name.substring(0, 17) + "..." : file.name)
       console.log(url);
       const textRes = await axios.get(url)
-      const response = await axios.post('http://localhost:3001/', { text: textRes.data });
+      const response = await axios.post('https://jeescore.onrender.com/', { text: textRes.data });
       console.log(response.data.result);
       setResult(response.data);
     } catch (e) {
