@@ -1,3 +1,4 @@
+import { Toaster } from 'sonner'
 import './App.css'
 import UploadForm from './components/UploadForm'
 
@@ -5,6 +6,7 @@ function App() {
 
   return (
     <div className="main">
+      <Toaster/>
       <header>
         <h5 className='branding'>JEEMARKS</h5>
         <h4 className='df'><a className='link' href="https://github.com/abancp/jeescore" target="_blank" rel="noopener noreferrer">source code</a><span className='credit-span'><h4 > created by <span><a className='link' href="https://github.com/abancp" target="_blank" rel="noopener noreferrer">abancp</a></span></h4></span></h4>
