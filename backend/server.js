@@ -16,7 +16,10 @@ app.use(cors({
     credentials: true,
     preflightContinue: 200
 }))
-
+app.get('/',(req,res)=>{
+    res.json({message:"JEEMARKS Server"})
+    return
+})
 app.post('/', async (req, res) => {
     // try{
     console.log(" POST / ");

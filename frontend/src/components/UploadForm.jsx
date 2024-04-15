@@ -16,13 +16,13 @@ function UploadForm() {
       let convertApi = ConvertApi.auth('meHku4AKGvNfMvn2')
       let params = convertApi.createParams()
       params.add('file', acceptedFiles[0])
-      let result = await convertApi.convert('pdf', 'txt', params)
-      let url = result.files[0].Url
-      // let url = "https://v2.convertapi.com/d/jniyjtnyax9a11m3x1q903i758wajofw/cdn3_digialm_com_per_g28_pub_2083_touchstone_AssessmentQPHTMLMode1.txt"
+      // let result = await convertApi.convert('pdf', 'txt', params)
+      // let url = result.files[0].Url
+      let url = "https://v2.convertapi.com/d/jniyjtnyax9a11m3x1q903i758wajofw/cdn3_digialm_com_per_g28_pub_2083_touchstone_AssessmentQPHTMLMode1.txt"
       const file = acceptedFiles[0]
       setName(file?.name?.length > 20 ? file.name.substring(0, 17) + "..." : file.name)
       console.log(url);
-      const response = await axios.post('http://localhost:3001/', { url: url });
+      const response = await axios.post('https://jeescore.onrender.com/', { url: url });
       console.log(response.data.result);
       setResult(response.data);
     } catch (e) {
