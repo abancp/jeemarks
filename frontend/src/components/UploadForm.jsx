@@ -216,7 +216,7 @@ function UploadForm() {
           </section>
         )}
       </Dropzone>
-      {loading && <div className='lbg'> <div className='spinner'></div> This will take few minuts </div>}
+      {loading && <div className='lbg'> <div className='spinner'></div> Uploading...  This will take few minuts </div>}
       {result && <ResultPopup result={result.result} right={result.right} wrong={result.wrong} />}
     </form>
   )
