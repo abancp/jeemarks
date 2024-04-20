@@ -201,7 +201,7 @@ function UploadForm() {
 
     } catch (e) {
       setLoading(false)
-      toast.error("Something Went Wrong!")
+      toast.error("Something Went Wrong!"+e)
     }
   }, [])
 
