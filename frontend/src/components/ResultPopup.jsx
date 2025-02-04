@@ -6,10 +6,10 @@ function ResultPopup({ result,right,wrong }) {
             <div className="popup-main">
 
                 <pre>
-                    <h4>Total Questions : 90</h4>
+                    <h4>Total Questions : 75</h4>
                     <h4>Right : {right}</h4>
                     <h4>Wrong : {wrong}</h4>
-                    <h4>Dropped : {90-(Number(right)+Number(wrong))}</h4>
+                    <h4>Dropped : {75-(Number(right)+Number(wrong))}</h4>
                     <h4>You scored : {right*4-wrong}</h4>
                 </pre>
 
