@@ -83,7 +83,7 @@ function UploadForm() {
         });
       }
 
-      console.log(mcqResults,saResults)
+      console.log(mcqResults, saResults)
 
       let answered = 0, right = 0, wrong = 0, notAnswered = 0
       let j = 1
@@ -98,7 +98,7 @@ function UploadForm() {
           } else if (mcq.Status === 'Marked') {
             if (mcq.ChosenOption !== '--') {
               answered++
-              if (answerKeyMap[mcq.QuestionID] === choosedOptionId) {
+              if (Array.isArray(answerKeyMap[mcq.QuestionID]) ? answerKeyMap[mcq.QuestionID].includes(choosedOptionId) : answerKeyMap[mcq.QuestionID] === choosedOptionId) {
                 right++
                 qResultArray = ["Right", mcq.QuestionID, choosedOptionId, answerKeyMap[mcq.QuestionID], "MCQ", "Marked & Answered", "+4"]
               } else {
